@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.typekit.net/hqo0upr.css">
+  <link rel="stylesheet" href="css/style-grid.css">
+  <title>s h o e g a z i n g</title>
+</head>
+
+  <body class="grid-demo">
+    <section>
+      <div class="one">
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'MBV')" id="defaultOpen">My Bloody Valentine</button>
+          <button class="tablinks" onclick="openCity(event, 'Slowdive')">Slowdive</button>
+          <button class="tablinks" onclick="openCity(event, 'Ride')">Ride</button>
+          <button class="tablinks" onclick="openCity(event, 'Lush')">Lush</button>
+        </div>
+      </div>
+
+    <div class="content">
+      <div id="MBV" class="tabcontent">
+        <div id="inner-grid">
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quos omnis officia eveniet est culpa deserunt commodi adipisci sint veniam, dolorem nisi, repellendus distinctio consequatur sit sequi optio quia at autem. Dolore, quod, iusto. Consequuntur quaerat quae voluptatum corrupti fugiat. Minus vel beatae deserunt facilis voluptate, blanditiis eius, quia maxime.
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quos omnis officia eveniet est culpa deserunt commodi adipisci sint veniam, dolorem nisi, repellendus distinctio consequatur sit sequi optio quia at autem. Dolore, quod, iusto. Consequuntur quaerat quae voluptatum corrupti fugiat. Minus vel beatae deserunt facilis voluptate, blanditiis eius, quia maxime.
+        </div>
+        </div>
+      </div>
+
+      <div id="Slowdive" class="tabcontent">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, fugiat, a! Vel magnam nostrum ea sunt! Id, quos, officiis. Inventore illum aspernatur ad quam ex sint, laborum natus voluptates iusto repellat accusantium? Sunt similique, ad ut possimus, perferendis assumenda vero modi, magnam nihil molestias natus ea a accusamus, pariatur tempora amet iste numquam beatae architecto consectetur quam obcaecati porro explicabo nulla quas. Molestias commodi nam beatae et, voluptas, vel expedita dicta dolores aliquam fugit ut, veniam fugiat, non in voluptatem.
+      </div>
+
+      <div id="Ride" class="tabcontent">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quibusdam totam delectus odit minus ducimus molestiae, ipsam nihil sed omnis aliquid quam nisi voluptatum, ratione porro nulla. Minima quo hic totam. Perspiciatis non aliquam amet ipsum in, corporis sapiente voluptas itaque repellat illum quia repellendus aliquid tenetur nulla quo expedita doloribus, id, quidem architecto optio ea! Suscipit rerum sunt, minus nisi temporibus quas minima, nemo voluptates, sapiente, officiis ab ut a deleniti earum praesentium vero quae pariatur necessitatibus natus quam dolore. Aliquam, cumque autem! Obcaecati accusamus necessitatibus, quam quasi, omnis aperiam, quibusdam quod numquam incidunt iste dolore nostrum tenetur nemo.
+      </div>
+
+      <div id="Lush" class="tabcontent">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus officiis, asperiores quisquam fugiat sit eius, iste porro molestiae doloribus alias? Architecto minima fugit id cum aliquid ipsam, assumenda illum, totam eum aspernatur sint a expedita. Laborum necessitatibus incidunt, soluta distinctio.
+      </div>
+    </div>
+
+    <div class="three">
+      hello
+    </div>
+  </section>
+
+  <script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>

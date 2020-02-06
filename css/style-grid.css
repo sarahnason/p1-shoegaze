@@ -1,31 +1,20 @@
-/*
-font-family: 'Taviraj', serif;
-font-family: 'Public Sans', sans-serif;
-*/
+
 
 body {
-  margin:0;
-  padding:0;
-}
-
-h1 {
-
-}
-
-body {
-  margin:0;
-  padding:0;
-}
+  height: 100%;
+  margin: 0;
+  color: #f286a7;
+  }
 
 .grid-demo section {
   display: grid;
   grid-template-columns: 35% 65%;
   grid-gap: 0px;
-  background-color: #000;
+  background-color: #fff;
 }
 
 .grid-demo div {
-  border: 0px solid black;
+  border: 1px solid black;
   padding: 0px;
 }
 
@@ -40,61 +29,20 @@ body {
 
 .grid-demo .three {
   height: 40vh;
-  padding-top: 30px;
   text-align: center;
-  display: inline-block;
-}
-
-* {
-  box-sizing: border-box
-}
-
-body {
-  height: 100%;
-  margin: 0;
-  color: #f286a7;
-  }
-
-  /* Style the tab content */
-.tabcontent {
-  float: left;
-  background-color: #000;
-  padding-left: 15px;
-  border: none;
-  width: 100%;
-  border-left: none;
-  height: 100vh;
-  z-index: 1;
-}
-
-p {
-  position: absolute;
-  padding-top: 20px;
-  font-family: moret, serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 30px;
-  line-height: 40px;
-  z-index: 4;
-  }
-
-.profile {
-  border-radius: 50%;
-  width: 125px;
 }
 
 /* Style the tab */
 .tab {
   float: left;
-  background-color: #000;
+  background-color: #fff;
   width: 100%;
-  z-index: 3;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
   display: block;
-  background-color: #000;
+  background-color: #fff;
   padding: 35px 28px;
   width: 100%;
   border: none;
@@ -121,12 +69,20 @@ p {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #f286a7;
   text-decoration:none;
+
+  /* Style the tab content */
+.tabcontent {
+  float: left;
+  background-color: #fff;
+  padding-left: 15px;
+  border: none;
+  width: 100%;
+  border-left: none;
+  height: 100vh;
 }
 
-video {
-  position: fixed;
-  min-height: 100%;
-  display: inline-block;
-  overflow: hidden;
-  z-index: 2; 
+#inner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
 }
